@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Como mudar o pitch de uma música do YouTube em tempo real | Guia KeyPitch</title>
+  <meta name="description" content="Aprenda a mudar o pitch de qualquer música do YouTube em tempo real. Ajuste o pitch, a tonalidade, a reverberação, a velocidade, crie loops e ative o áudio 8D com a extensão KeyPitch para Chrome — ideal para cantores, músicos e amantes da música." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="128x128" href="KeyPitch-logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="KeyPitch-logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="KeyPitch-logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="KeyPitch-logo.png">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://keypitch.github.io/mudar-pitch/">
+  <!-- Links multilíngues (ativar quando as outras páginas existirem)
+  <link rel="alternate" hreflang="en" href="https://keypitch.github.io/change-pitch/">
+  <link rel="alternate" hreflang="fr" href="https://keypitch.github.io/changer-pitch/">
+  <link rel="alternate" hreflang="es" href="https://keypitch.github.io/cambiar-pitch/">
+  <link rel="alternate" hreflang="de" href="https://keypitch.github.io/pitch-andern/">
+  <link rel="alternate" hreflang="tl" href="https://keypitch.github.io/baguhin-ang-pitch/">
+  -->
+
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root{
+      --bg:#121212;
+      --glass-light:rgba(255,255,255,0.08);
+      --glass-dark:rgba(0,0,0,0.6);
+      --accent:#9b4dff;
+      --accent-dark:#6b28d8;
+      --muted:rgba(255,255,255,0.65);
+      --radius:18px;
+    }
+    body{
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:var(--bg);
+      color:#fff;
+      margin:0;
+      padding:24px;
+      max-width:720px;
+      line-height:1.6;
+      margin-inline:auto;
+      -webkit-font-smoothing:antialiased;
+    }
+    h1{
+      font-size:26px; font-weight:800; text-align:center; margin:0 0 18px;
+      color:rgba(255,255,255,0.92);
+      text-shadow:0 0 10px rgba(155,77,255,0.5);
+    }
+    h2{ font-size:20px; margin:0 0 12px; color:var(--accent); font-weight:700; }
+    p{ margin:0 0 12px; color:rgba(255,255,255,0.88); }
+    .card{
+      background:var(--glass-dark);
+      border:1px solid var(--glass-light);
+      border-radius:var(--radius);
+      padding:18px 20px;
+      box-shadow:0 0 25px rgba(155,77,255,0.18);
+      backdrop-filter:blur(10px);
+      margin-top:16px;
+    }
+    .highlight{ color:var(--accent); font-weight:700; }
+    .button{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px; text-decoration:none; cursor:pointer;
+      background:linear-gradient(145deg, var(--accent), var(--accent-dark));
+      color:#fff; font-weight:700; border:none; border-radius:14px;
+      padding:12px 18px; margin-top:12px;
+      box-shadow:0 0 24px rgba(155,77,255,0.6), 0 0 48px rgba(128,0,255,0.4);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .button:hover{ transform:translateY(-1px); box-shadow:0 0 40px rgba(155,77,255,0.9), 0 0 80px rgba(128,0,255,0.6); }
+    .material-icons{ font-size:20px; line-height:1; vertical-align:middle; }
+    .steps{ display:flex; flex-direction:column; gap:10px; }
+    .step{
+      display:grid; grid-template-columns:28px 1fr; gap:12px;
+      align-items:center;
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:12px; padding:10px 12px;
+    }
+    .step .icon{
+      width:28px; height:28px;
+      display:flex; align-items:center; justify-content:center;
+      color:var(--accent);
+    }
+    .step p{ margin:0; }
+    footer{ text-align:center; font-size:13px; color:var(--muted); margin:28px 0 8px; }
+    @media (max-width:600px){
+      body{ padding:18px; }
+      h1{ font-size:22px; }
+      h2{ font-size:18px; }
+      .button{ font-size:14px; padding:10px 16px; border-radius:12px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Como mudar o pitch de uma música do YouTube em tempo real</h1>
+
+  <div class="card">
+    <h2>Mude o pitch de qualquer música do YouTube em tempo real, diretamente no navegador — sem downloads nem conversores.</h2>
+  </div>
+
+  <div class="card">
+    <h2>Tutorial passo a passo</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="icon"><span class="material-icons">download</span></div>
+        <p><strong>Baixe a extensão KeyPitch para Chrome</strong> usando o botão abaixo.</p>
+      </div>
+
+      <a class="button" href="https://chromewebstore.google.com/detail/mnpdjalbnlhffmobepnoiphgjkiplbpf?utm_source=item-share-cb" target="_blank" rel="noopener">
+        <span class="material-icons">open_in_new</span> Baixar no Chrome Web Store
+      </a>
+
+      <div class="step">
+        <div class="icon"><span class="material-icons">music_note</span></div>
+        <p><strong>Abra o YouTube</strong> e reproduza a música desejada.</p>
+      </div>
+
+      <div class="step">
+        <div class="icon"><span class="material-icons">extension</span></div>
+        <p>Clique no <strong>ícone de quebra-cabeça</strong> (Extensões) no canto superior direito do navegador e selecione <strong>KeyPitch</strong>.</p>
+      </div>
+
+      <div class="step">
+        <div class="icon"><span class="material-icons">tune</span></div>
+        <p>Quando o painel de controle abrir, mova o controle deslizante <strong>para a esquerda</strong> para abaixar o pitch (até <span class="highlight">415,3 Hz</span>) ou <strong>para a direita</strong> para aumentá-lo (até <span class="highlight">466,2 Hz</span>).</p>
+      </div>
+
+      <div class="step">
+        <div class="icon"><span class="material-icons">star_rate</span></div>
+        <p>Se a experiência for útil, considere deixar uma <strong>avaliação 5/5</strong> na Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Mais formas de controlar a música</h2>
+    <p>A ferramenta também permite <strong>transpor por semitons</strong> para alterar a tonalidade em tempo real — ideal para cantores e prática instrumental.</p>
+    <p>Ela ainda oferece <strong>reverberação</strong>, <strong>ajuste de velocidade</strong>, <strong>criação de loops</strong> e modo de <strong>áudio 8D</strong> para uma experiência sonora imersiva.</p>
+  </div>
+
+  <div class="card">
+    <h2>Perfeito para</h2>
+    <p>Amantes da música, cantores, músicos, professores de música, treinadores vocais, fãs de karaokê e profissionais de áudio que precisam de controle rápido de pitch e tonalidade diretamente no YouTube.</p>
+  </div>
+
+  <footer>
+    Controle de pitch, tonalidade, velocidade, reverberação e áudio 8D em tempo real no YouTube.
+  </footer>
+</body>
+</html>
